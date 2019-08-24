@@ -184,3 +184,5 @@ if __name__ == '__main__':
     now_time = DateUtil.parse_date("2016-02-26")
     print(DateUtil.get_yesterday_fmt(None,start))
     print(DateUtil.convert_timestamp_to_date(1528506802))
+    print(type(DateUtil.get_yesterday()))
+
