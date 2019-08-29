@@ -9,7 +9,6 @@ setup(
     name="common-util",
     version="1.0",
     packages=find_packages(),
-    author='yuemanly',
     zip_safe = False
 )
 

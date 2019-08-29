@@ -75,6 +75,8 @@ class ConfigUtil(object):
             else:
                 return False
 
+if __name__ == '__main__':
+    pass
 # a = ConfigUtil('/Users/liusheng/Downloads/github/tools/wuhao/wh_tools_master')
 # a.get('mysql.bi_result.t9.hos')
 # print(a.config.get('mysql.bi_result.t9.host'))

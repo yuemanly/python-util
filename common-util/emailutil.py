@@ -43,4 +43,7 @@ class EmailUtil(object):
         except smtplib.SMTPException:
             print("发送邮件失败")
 
+if __name__ == '__main__':
+    pass
+
 

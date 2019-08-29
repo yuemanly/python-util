@@ -36,3 +36,5 @@ class Logger(object):
     def getlog(self):
         return self.logger
 
+if __name__ == '__main__':
+    pass
