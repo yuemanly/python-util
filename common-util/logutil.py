@@ -5,8 +5,6 @@ import logging.handlers
 import logging.config
 import os
 
-
-
 class Logger(object):
     def __init__(self, name,configUtil,logFile=None,logDir=None):
         self.config = configUtil
@@ -19,6 +17,7 @@ class Logger(object):
         # 用于写入日志文件
         if logDir == None:
             log_dir = self.config.get("log.dir")
+            print(log_dir)
         else:
             log_dir = logDir
         if not os.path.exists(log_dir):
@@ -36,3 +35,4 @@ class Logger(object):
 
     def getlog(self):
         return self.logger
+

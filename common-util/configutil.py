@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 
 import os
-import sys
+# import sys
 
 '''
 读取配置文件
@@ -27,10 +27,10 @@ class ConfigUtil(object):
            self.config = self.load_config(config_file_path)
 
         #加载全局公共的配置信息
-        if self.config.has_key("common_config_project_path"):
-            common_config_project_path = self.config.get("common_config_project_path")
-            common_config_file_path = common_config_project_path + os.path.sep + project_env + os.path.sep + "common-config.ini"
-            self.config.update(self.load_config(common_config_file_path))
+        # if self.config.has_key("common_config_project_path"):
+        #     common_config_project_path = self.config.get("common_config_project_path")
+        #     common_config_file_path = common_config_project_path + os.path.sep + project_env + os.path.sep + "common-config.ini"
+        #     self.config.update(self.load_config(common_config_file_path))
 
 
 
@@ -74,3 +74,7 @@ class ConfigUtil(object):
                 return True
             else:
                 return False
+
+# a = ConfigUtil('/Users/liusheng/Downloads/github/tools/wuhao/wh_tools_master')
+# a.get('mysql.bi_result.t9.hos')
+# print(a.config.get('mysql.bi_result.t9.host'))

@@ -1,7 +1,10 @@
 # _*_ coding:utf-8 _*_
+
+from logutil import Logger
+from configutil import ConfigUtil
 import pymysql
 from sshtunnel import SSHTunnelForwarder
-
+from DBUtils.PooledDB import PooledDB
 
 class DBUtil(object):
 
