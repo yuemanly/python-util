@@ -37,4 +37,6 @@ class Logger(object):
         return self.logger
 
 if __name__ == '__main__':
-    pass
+    config = {'host': '74.82.212.212','port': 26439 ,'user': 'root','password': 'HHbQo9ki8jTb',"log.dir":"/Users/liusheng/Downloads/"}
+    a = Logger('a',config)
+    a.getlog()
